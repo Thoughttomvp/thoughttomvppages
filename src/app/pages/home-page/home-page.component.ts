@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { BannerComponent } from '../../components/banner/banner.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [],
+  imports: [
+    BannerComponent
+  ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })

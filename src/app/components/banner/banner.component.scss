@@ -1,0 +1,118 @@
+.banner {
+  background: linear-gradient(90deg, rgba(255, 170, 48, 1) 0%, rgba(233, 93, 77, 1) 52%, rgba(255, 170, 48, 1) 100%);
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  text-align: center;
+
+  @media(min-width:768px) {
+    padding: 8em 1.875em 3em;
+  }
+
+  @media(min-width: 1280px) {
+    padding: 8em 6.875em 3em;
+  }
+
+  &__content {
+    .heading {
+      color: black;
+      font-family: "Changa One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.5em;
+      line-height: 1.5;
+      color: white;
+
+      @media(min-width: 768px) {
+        font-size: 2.5em;
+      }
+
+      @media(min-width: 1280px) {
+        font-size: 3em;
+      }
+
+      .highlight {
+        background: black;
+        color: white;
+      }
+
+    }
+
+    p {
+      color: black;
+      margin: 2em 0;
+      line-height: 1.5;
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .button-section {
+      display: flex;
+      justify-content: center;
+      margin: 3em 0;
+
+      button {
+        color: white;
+        padding: 18px;
+        width: 16em;
+        text-transform: uppercase;
+        background: rgb(0, 0, 0);
+        border: 2px solid rgb(0, 0, 0);
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1rem;
+        border-radius: 16px;
+        cursor: pointer;
+        transition: all 0.4s;
+
+        &:hover {
+          opacity: 0.8;
+          color: black;
+          background: white;
+          border: none;
+        }
+
+        @media(min-width:768px) {
+          width: 18em;
+        }
+
+      }
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 3em 0;
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+
+      @media(min-width: 768px) {
+        flex-direction: row;
+      }
+
+      .feature {
+        background: rgb(255, 255, 255);
+        color: black;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        padding: 0.5em;
+        margin: 0.5em;
+      }
+    }
+
+    .banner-image img {
+      width: 80vw;
+
+      @media(min-width: 1280px) {
+        width: 65vw;
+      }
+    }
+  }
+}
