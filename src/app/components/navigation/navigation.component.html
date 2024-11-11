@@ -1,1 +1,27 @@
-<p>navigation works!</p>
+<section class="navigation">
+    <div class="desktop-menu" [ngClass]="{'desktopMenu': true, 'mobileMenu': false}">
+        <div class="nav-logo">Thought to MVP Pages</div>
+        <nav class="nav-items">
+            <button (click)="scrollTo('top-banner')">Home</button>
+            <button (click)="scrollTo('features')">Benefits</button>
+            <button (click)="scrollTo('pricing')">Pricing</button>
+            <button (click)="scrollTo('work')">FAQs</button>
+            <button (click)="scrollTo('contact')">Contact</button>
+        </nav>
+    </div>
+    <div class="mobile-menu" [ngClass]="{'desktopMenu': false, 'mobileMenu': true}">
+        <div class="mobile-logo"><img src="assets/images/thoughttomvplogo.png" alt="logo"></div>
+        <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+        <mat-menu #menu="matMenu">
+          <button (click)="scrollTo('top-banner')" mat-menu-item>Home</button>
+          <button (click)="scrollTo('features')" mat-menu-item>Benefits</button>
+          <button (click)="scrollTo('pricing')" mat-menu-item>Pricing</button>
+          <button (click)="scrollTo('work')" mat-menu-item>FAQs</button>
+          <button (click)="scrollTo('footer')" mat-menu-item>Contact</button>
+        </mat-menu>
+
+    </div>
+    
+</section>
+
+
