@@ -1,19 +1,20 @@
 .banner {
   background: linear-gradient(90deg, rgba(255, 170, 48, 1) 0%, rgba(233, 93, 77, 1) 52%, rgba(255, 170, 48, 1) 100%);
-  display: flex;
-  justify-content: center;
-  padding: 2em;
-  text-align: center;
-
-  @media(min-width:768px) {
-    padding: 8em 1.875em 3em;
-  }
-
-  @media(min-width: 1280px) {
-    padding: 8em 6.875em 3em;
-  }
 
   &__content {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    flex-direction: column;
+  
+    @media(min-width:768px) {
+      padding: 8em 1.875em 3em;
+    }
+  
+    @media(min-width: 1280px) {
+      padding: 8em 6.875em 3em;
+    }
     .heading {
       color: black;
       font-family: "Changa One", sans-serif;
@@ -51,7 +52,7 @@
     .button-section {
       display: flex;
       justify-content: center;
-      margin: 3em 0;
+      margin: 1.5em 0;
 
       button {
         color: white;
@@ -87,7 +88,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 3em 0;
+      margin: 2em 0 3.5em;
       font-family: "Outfit", sans-serif;
       font-optical-sizing: auto;
       font-weight: 500;
@@ -104,6 +105,11 @@
         border-radius: 3px;
         padding: 0.5em;
         margin: 0.5em;
+
+        .fa {
+          color: #E95D4D;
+          padding: 0 0.5em;
+        }
       }
     }
 

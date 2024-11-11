@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { NavigationComponent } from '../navigation/navigation.component';
 
 @Component({
   selector: 'app-banner',
   standalone: true,
-  imports: [],
+  imports: [
+    NavigationComponent
+  ],
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss'
 })
