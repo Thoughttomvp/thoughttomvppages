@@ -1,0 +1,65 @@
+.pricing-section {
+  background: linear-gradient(90deg, rgba(255, 170, 48, 1) 0%, rgba(233, 93, 77, 1) 52%, rgba(255, 170, 48, 1) 100%);
+  padding: 4em 6em;
+
+  .heading {
+    font-size: 1.1em;
+    padding: 1em 0.5em 0.6em;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    color: white;
+
+    @media(min-width: 768px) {
+      font-size: 1.8em;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: start;
+
+    .pricing-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+      margin: 1.5em 0;
+
+      @media(min-width: 768px) {
+        flex-direction: row;
+      }
+
+      .pricing-card {
+        background: white;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+        height: auto;
+        padding: 2rem;
+        margin: 1em 0;
+
+        @media(min-width: 1280px) {
+          width: 20vw;
+        }
+
+        .card-title {
+          padding: 0.5em 0;
+          font-family: "Rajdhani", sans-serif;
+          font-weight: 600;
+          font-size: 1.3em;
+        }
+
+        .card-image {
+          img {
+            height: 10vh;
+          }
+        }
+
+        .card-price {
+          font-size: 2em;
+          padding: 0.5em 0em;
+          font-family: "Rajdhani", sans-serif;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
