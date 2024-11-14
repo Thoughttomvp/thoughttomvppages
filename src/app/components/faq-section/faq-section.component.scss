@@ -1,0 +1,49 @@
+.faqs {
+  @media(min-width:768px) {
+    padding: 6em 2em;
+  }
+
+  .heading {
+    font-size: 1.1em;
+    padding: 1em;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+
+    @media(min-width: 768px) {
+      font-size: 1.8em;
+    }
+  }
+
+  .questions {
+    padding: 1em;
+
+    .question {
+      margin: 1.5em 1em;
+
+      mat-expansion-panel-header {
+        padding: 1em;
+        border-radius: 1em;
+      }
+
+
+      .question-title {
+        font-size: 16px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding-left: 0.7em;
+
+        @media(min-width: 768px) {
+          font-size: 16px;
+        }
+      }
+
+      p {
+        line-height: 1.5;
+      }
+    }
+
+  }
+
+}
