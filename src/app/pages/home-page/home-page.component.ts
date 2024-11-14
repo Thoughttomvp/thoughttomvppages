@@ -11,7 +11,7 @@ import { FaqSectionComponent } from '../../components/faq-section/faq-section.co
     BannerComponent,
     BenefitsComponent,
     PricesSectionComponent,
-    FaqSectionComponent
+    FaqSectionComponent,
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
