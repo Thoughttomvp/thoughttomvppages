@@ -1,0 +1,54 @@
+.footer {
+    background: linear-gradient(90deg, rgba(255, 170, 48, 1) 0%, rgba(233, 93, 77, 1) 52%, rgba(255, 170, 48, 1) 100%);
+    padding: 2em;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        @media(min-width: 768px) {
+            flex-direction: row;
+        }
+
+        .logo img {
+            width: 15vh;
+            padding-top: 3em;
+        }
+
+        .footer-section {
+            .heading {
+                padding: 0.5em 0;
+                font-family: "Rajdhani", sans-serif;
+                font-weight: 600;
+                font-size: 1.3em;
+                color: white;
+            }
+
+            .social-links {
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+
+                .fa {
+                    color: black;
+                    font-size: 1em;
+                }
+            }
+
+            .contact-details {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .copyright {
+        padding: 1em 0;
+
+        .text {
+            color: white;
+            padding: 1.5em 1em;
+        }
+    }
+}
