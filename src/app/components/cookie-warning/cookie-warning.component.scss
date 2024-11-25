@@ -1,4 +1,3 @@
-/* cookie-warning.component.css */
 .cookie-warning {
     position: fixed;
     bottom: 0;
@@ -16,7 +15,16 @@
   .cookie-content {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
+
+    @media(min-width: 1024px) {
+      flex-direction: row;
+    }
+
+    p {
+      padding: 0.5em;
+    }
   }
   
   .cookie-warning a {
